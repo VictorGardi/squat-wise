@@ -5,13 +5,6 @@ import requests
 import youtube_transcript_api
 
 
-def main():
-    channel_id = "UCyPYQTT20IgzVw92LDvtClw"  # Squat University YouTube channel ID
-    api_key = "AIzaSyASCLOtiLbW_qP5z5ziIGaSjFZ8cipYQes"  # Replace with your actual YouTube API key
-    yt = YoutubeTranscriber(api_key)
-    yt.transcribe_videos_in_channel(channel_id)
-
-
 class YoutubeTranscriber:
     def __init__(self, api_key: str) -> None:
         self._api_key = api_key
